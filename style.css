@@ -254,6 +254,7 @@ img, svg {
     flex: 1 1 auto;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     color: var(--bs-card-color);
+    float: right;
 }
 .card-title {
     font-size: 35px;
@@ -266,4 +267,22 @@ img, svg {
 .card-title {
     margin-bottom: var(--bs-card-title-spacer-y);
     color: var(--bs-card-title-color);
+}
+section .rightText{
+    color: black;
+    align-items: center;
+}
+.leftImage img{
+    float: left;
+    width: 50%;
+    height: 550px;
+    /* height: 20px; */
+}
+section .rightText{
+    font-size: 19px;
+    color: #ef990a;
+}
+
+section .rightText h1{
+    align-items: left;
 }
