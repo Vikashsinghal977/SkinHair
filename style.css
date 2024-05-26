@@ -1,5 +1,5 @@
 body{
-    background-color: #1c1d1d;
+    background-color: black;
     color: #ef990a;
     margin: 0px;
 }
@@ -107,7 +107,7 @@ body{
     padding-right: 3rem !important;
     padding-left: 3rem !important;
     height: 90px;
-    border: 2px solid #ffc107;
+    /* border: 2px solid #ffc107; */
 }   
 .handle-phone-align {
     min-width: 180px;
@@ -186,7 +186,11 @@ img, svg {
     background-color: var(--bs-btn-bg);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-
+.btn:hover{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    color: #000;
+}
 .mt-5 {
     margin-top: 3rem !important;
 }
@@ -285,4 +289,72 @@ section .rightText{
 
 section .rightText h1{
     align-items: left;
+}
+
+.showcase{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.video-container{
+    overflow: hidden;
+}
+.request-box{
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(247, 245, 245, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition: 1s;
+}
+.request-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    color: black;
+}
+.request-box .user-box{
+    position: relative;
+}
+.request-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: transparent;
+}
+.request-box .user-box select{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: transparent;
+}
+.request-box .user-box label{
+    
+    padding: 10px 0;
+    font-size: 23px;
+    color: darkorange;
+    pointer-events: none;
+    transition: .5s;
+}
+input::placeholder{
+    color: #000;
 }
