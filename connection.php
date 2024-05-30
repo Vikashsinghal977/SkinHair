@@ -19,11 +19,12 @@ if (!empty($username)){
             else{
                 $sql = "INSERT INTO persone VALUE('$username', '$userphone', '$userdob')";
                 if ($conn->query($sql)){
-                    echo "new record is inserted succefully";
+                    header("Location: ThankYou.html");
                 }
                 else{
                     echo("Error :");
                 }
+                
                 $conn->close();
             }
         }
