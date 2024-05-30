@@ -498,3 +498,56 @@ button:not(:disabled) {
 
 
 /* Coded Ended Here */
+
+/* FAQ Start Here */
+
+.faq-con{
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.faq-con .accordion-wrapper{
+    padding: 0 20px;
+}
+.faq-con .accordion{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.faq-con .accordion.active .accordion-heading{
+    background-color: #3e57d0;
+    color: #fff;
+}
+.faq-con .accordion.active .accordion-heading i{
+    color: #fff;
+    transform: rotate(180deg);
+}
+.faq-con .accordion.active .accordion-content{
+    display: block;
+}
+
+
+
+
+.faq-con .accordion-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #fff;
+    border-radius: 5px ;
+    padding: 0px 15px;
+}
+
+.faq-con .accordion-heading h3{
+    font-size: 20px;
+    color: black;
+}
+.faq-con .accordion-content{
+    padding: 15px 20px;
+    border: 2px solid #333;
+    font-size: 15px;
+    background-color: #fff;
+    border-top: 0;
+    display: none;
+}
